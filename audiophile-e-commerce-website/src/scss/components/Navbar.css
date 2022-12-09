@@ -1,0 +1,75 @@
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: var(--header-bg-clr);
+}
+header .nav {
+  padding: 2rem 0;
+}
+@media (min-width: 56.25em) {
+  header .nav {
+    padding: 2rem 0 2.25rem;
+  }
+}
+header .nav img {
+  display: block;
+}
+header .nav-left {
+  width: 70%;
+}
+header .nav-left .links {
+  display: none;
+}
+@media (min-width: 43.75em) {
+  header .nav-left {
+    width: 27.5%;
+  }
+}
+@media (min-width: 56.25em) {
+  header .nav-left {
+    width: 73.5%;
+  }
+  header .nav-left .mobile-menu {
+    display: none;
+  }
+  header .nav-left .links {
+    display: flex;
+  }
+}
+header .nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header .nav ul li + li {
+  margin-left: 1.9375rem;
+}
+header .nav ul a {
+  color: var(--title-clr);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s ease-in-out;
+}
+header .nav ul a:hover, header .nav ul a:focus {
+  color: var(--accent-clr);
+}
+header hr {
+  margin: 0;
+  opacity: 0.1;
+}
+@media (min-width: 43.75em) {
+  header hr {
+    max-width: 48em;
+    margin: 0 auto;
+    opacity: 0.2;
+  }
+}
+@media (min-width: 56.25em) {
+  header hr {
+    max-width: 69.375em;
+    opacity: 0.2;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

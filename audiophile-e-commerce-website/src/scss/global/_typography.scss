@@ -1,0 +1,72 @@
+@use '../util' as u;
+
+h1, h2, h3, h4, h5, span, p, a {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: u.toRem(36);
+    line-height: u.toRem(58);
+    letter-spacing: 2px;
+
+    @include u.breakpoint('medium'){
+        font-size: u.toRem(56);
+    }
+}
+
+h2 {
+    font-size: u.toRem(40);
+    line-height: u.toRem(44);
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    font-size: u.toRem(32);
+    line-height: u.toRem(36);
+    letter-spacing: 1.15px;
+}
+
+h4 {
+    font-size: u.toRem(28);
+    line-height: u.toRem(38);
+    letter-spacing: 2px;
+}
+
+h5 {
+    font-size: u.toRem(24);
+    line-height: u.toRem(33);
+    letter-spacing: 1.7px;
+}
+
+h6 {
+    font-size: u.toRem(18);
+    line-height: u.toRem(24);
+    letter-spacing: 1.3px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.overline {
+    font-size: u.toRem(14);
+    line-height: u.toRem(19);
+    letter-spacing: 10px;
+}
+
+.subtitle {
+    font-size: u.toRem(13);
+    line-height: u.toRem(25);
+    letter-spacing: 1px;
+}
+
+.btn-txt {
+    font-weight: 700;
+    font-size: u.toRem(13);
+    line-height: u.toRem(18);
+    letter-spacing: 1px;
+}

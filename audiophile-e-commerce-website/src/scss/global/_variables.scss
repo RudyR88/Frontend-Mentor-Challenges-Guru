@@ -1,0 +1,17 @@
+:root {
+    --primary-ft: 'Manrope', sans-serif;
+    
+    --accent-clr: hsl(22, 65%, 57%);
+    --line-clr: hsl(0, 0%, 59.2%);
+    --bg-clr: hsl(0, 0%, 6%);
+    --header-bg-clr: hsl(0, 0%, 10%);
+    --txt-clr: hsl(0, 0%, 95%);
+    --title-clr: hsl(0, 0%, 98%);
+    --hover-clr: hsl(21, 94%, 75%);
+    --light-clr: hsl(0, 0%, 100%);
+    --dark-clr: hsl(0, 0%, 0%);
+
+    --hero-mobile: url('../assets/home/mobile/image-header.jpg');
+    --hero-tablet: url('../assets/home/tablet/image-header.jpg');
+    --hero-desktop: url('../assets/home/desktop/image-hero.jpg');
+}

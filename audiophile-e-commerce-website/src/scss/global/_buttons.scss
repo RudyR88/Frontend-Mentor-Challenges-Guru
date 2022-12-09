@@ -1,0 +1,20 @@
+@use '../util' as u;
+
+.btn {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: u.toRem(15);
+    width: u.toRem(160);
+    transition: background-color .3s ease-in-out;
+
+    &-orange {
+        background-color: var(--accent-clr);
+        color: var(--light-clr);
+
+        &:hover, &:focus {
+            background-color: var(--hover-clr);
+        }
+    }
+}

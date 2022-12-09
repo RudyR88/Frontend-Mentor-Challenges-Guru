@@ -1,0 +1,165 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-ft);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  position: relative;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: 0.9375rem;
+  width: 10rem;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn-orange {
+  background-color: var(--accent-clr);
+  color: var(--light-clr);
+}
+.btn-orange:hover, .btn-orange:focus {
+  background-color: var(--hover-clr);
+}
+
+h1, h2, h3, h4, h5, span, p, a {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 3.625rem;
+  letter-spacing: 2px;
+}
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-size: 1.75rem;
+  line-height: 2.375rem;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 2.0625rem;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: 1.3px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.overline {
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  letter-spacing: 10px;
+}
+
+.subtitle {
+  font-size: 0.8125rem;
+  line-height: 1.5625rem;
+  letter-spacing: 1px;
+}
+
+.btn-txt {
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  letter-spacing: 1px;
+}
+
+:root {
+  --primary-ft: "Manrope", sans-serif;
+  --accent-clr: hsl(22, 65%, 57%);
+  --line-clr: hsl(0, 0%, 59.2%);
+  --bg-clr: hsl(0, 0%, 6%);
+  --header-bg-clr: hsl(0, 0%, 10%);
+  --txt-clr: hsl(0, 0%, 95%);
+  --title-clr: hsl(0, 0%, 98%);
+  --hover-clr: hsl(21, 94%, 75%);
+  --light-clr: hsl(0, 0%, 100%);
+  --dark-clr: hsl(0, 0%, 0%);
+  --hero-mobile: url("../assets/home/mobile/image-header.jpg");
+  --hero-tablet: url("../assets/home/tablet/image-header.jpg");
+  --hero-desktop: url("../assets/home/desktop/image-hero.jpg");
+}
+
+.container {
+  width: 90%;
+  max-width: 23.4375em;
+  margin: 0 auto;
+}
+@media (min-width: 43.75em) {
+  .container {
+    max-width: 48em;
+  }
+}
+@media (min-width: 56.25em) {
+  .container {
+    max-width: 69.375em;
+  }
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-2x1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+@media (min-width: 56.25em) {
+  .grid-2x1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

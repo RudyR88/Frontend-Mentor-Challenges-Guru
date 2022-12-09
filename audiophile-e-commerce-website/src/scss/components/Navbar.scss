@@ -1,0 +1,77 @@
+@use '../util' as u;
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: var(--header-bg-clr);
+
+    .nav {
+        padding: u.toRem(32) 0;
+
+        @include u.breakpoint('large'){
+            padding: u.toRem(32) 0 u.toRem(36);
+        }
+
+        img {
+            display: block;
+        }
+
+        &-left {
+            width: 70%;
+
+            .links {
+                display: none;
+            }
+
+            @include u.breakpoint('medium'){
+                width: 27.5%;
+            }
+
+            @include u.breakpoint('large'){
+                width: 73.5%;
+                .mobile-menu {display: none;}
+                .links {display: flex;}
+            }
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            li + li {
+                margin-left: u.toRem(31);
+            }
+
+            a {
+                color: var(--title-clr);
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 2px;
+                transition: color .3s ease-in-out;
+
+                &:hover, &:focus {
+                    color: var(--accent-clr);
+                }
+            }
+        }
+    }
+
+    hr {
+        margin: 0;
+        opacity: 0.1;
+
+        @include u.breakpoint('medium'){
+            max-width: u.toEm(768);
+            margin: 0 auto;
+            opacity: 0.2;
+        }
+
+        @include u.breakpoint('large'){
+            max-width: u.toEm(1110);
+            opacity: 0.2;
+        }
+    }
+}

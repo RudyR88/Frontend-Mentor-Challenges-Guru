@@ -1,0 +1,47 @@
+@use '../util' as u;
+
+.home {
+    &__hero {
+        height: u.toRem(510);
+        text-align: center;
+        background: var(--hero-mobile) bottom/cover no-repeat;
+
+        span {
+            color: var(--line-clr);
+        }
+
+        h1 {
+            color: var(--title-clr);
+        }
+
+        p {
+            color: #fff;
+        }
+
+        @include u.breakpoint('medium'){
+            height: u.toRem(636);
+            background: var(--hero-tablet) bottom/cover no-repeat;
+            p {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        @include u.breakpoint('large'){
+            height: u.toRem(633);
+            text-align: left;
+            background: var(--hero-desktop) bottom/cover no-repeat;
+            background-color: var(--header-bg-clr);
+
+            h1 {
+                width: 70%;
+            }
+
+            p {
+                width: 35%;
+                margin: 0;
+            }
+        }
+    }
+}
+
