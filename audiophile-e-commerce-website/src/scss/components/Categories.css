@@ -1,0 +1,23 @@
+.categories {
+  margin: 6rem auto 7.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 68px;
+  justify-items: center;
+}
+@media (min-width: 43.75em) {
+  .categories {
+    justify-items: flex-start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+@media (min-width: 43.75em) {
+  .categories {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}/*# sourceMappingURL=Categories.css.map */

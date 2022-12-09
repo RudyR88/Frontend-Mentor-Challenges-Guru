@@ -13,6 +13,10 @@ header {
             padding: u.toRem(32) 0 u.toRem(36);
         }
 
+        .logo {
+            color: var(--title-clr);
+        }
+
         img {
             display: block;
         }

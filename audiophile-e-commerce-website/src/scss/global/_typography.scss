@@ -39,9 +39,13 @@ h5 {
 }
 
 h6 {
-    font-size: u.toRem(18);
+    font-size: u.toRem(15);
     line-height: u.toRem(24);
     letter-spacing: 1.3px;
+
+    @include u.breakpoint('medium'){
+        font-size: u.toRem(18);
+    }
 }
 
 .bold {

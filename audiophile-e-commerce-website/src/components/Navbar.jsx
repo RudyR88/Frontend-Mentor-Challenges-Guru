@@ -1,5 +1,5 @@
-import React from 'react'
-import '../scss/components/Navbar.css'
+import React from 'react';
+import '../scss/components/Navbar.css';
 
 function Navbar() {
     return (
@@ -19,7 +19,7 @@ function Navbar() {
             </nav>
             <hr />
         </header>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;

@@ -1,0 +1,55 @@
+@use '../util' as u;
+
+.category__link {
+    position: relative;
+    background-color: var(--category-clr);
+    height: 165px;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark-clr);
+    padding-bottom: 22px;
+
+    @include u.breakpoint('large'){
+        height: 204px;
+    }
+
+    &__img {
+        display: block;
+        position: absolute;
+        width: 45%;
+        top: -30%;
+
+        @include u.breakpoint('large'){
+            width: 50%;
+        }
+    }
+
+    h6 {
+        color: var(--dark-clr);
+        margin: u.toRem(88) auto u.toRem(22);
+
+        @include u.breakpoint('large'){
+            margin: u.toRem(116) auto u.toRem(15);
+        }
+    }
+
+    &__txt{
+        color: var(--dark-clr);
+        opacity: 0.5;
+        transition: color .3s ease-in-out;
+
+        .arrow-icon {
+            margin-left: 13.32px;
+        }
+    }
+
+    &:hover, &:focus {
+        .category__link__txt{
+            color: var(--accent-clr);
+        }
+    }
+}

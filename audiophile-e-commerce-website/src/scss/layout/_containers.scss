@@ -13,3 +13,16 @@
         max-width: u.toEm(1110);
     }
 }
+
+.no-margin-container {
+    width: 90%;
+    max-width: u.toEm(375);
+
+    @include u.breakpoint('medium'){
+        max-width: u.toEm(768);
+    }
+
+    @include u.breakpoint('large'){
+        max-width: u.toEm(1110);
+    }
+}

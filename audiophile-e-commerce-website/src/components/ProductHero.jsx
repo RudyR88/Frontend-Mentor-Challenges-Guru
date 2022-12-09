@@ -1,7 +1,7 @@
-import React from 'react'
-import '../scss/components/ProductHero.css'
+import React from 'react';
+import '../scss/components/ProductHero.css';
 
-function ProductHero({productName, productDesc, productImg, productImgAlt}) {
+function ProductHero({productName, productDesc}) {
     return (
         <section className='product-hero'>
             <div className='product-hero__content container'>
@@ -14,4 +14,4 @@ function ProductHero({productName, productDesc, productImg, productImgAlt}) {
     )
 }
 
-export default ProductHero
+export default ProductHero;

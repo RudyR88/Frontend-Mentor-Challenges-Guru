@@ -1,0 +1,21 @@
+@use '../util' as u;
+
+.categories {
+    margin: u.toRem(96) auto u.toRem(120);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 68px;
+    justify-items: center;
+
+    @include u.breakpoint('medium'){
+        justify-items: flex-start;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        column-gap: 10px;
+    }
+
+    @include u.breakpoint('medium'){
+        column-gap: 30px;
+    }
+}

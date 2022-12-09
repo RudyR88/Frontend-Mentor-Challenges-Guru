@@ -12,6 +12,9 @@ header .nav {
     padding: 2rem 0 2.25rem;
   }
 }
+header .nav .logo {
+  color: var(--title-clr);
+}
 header .nav img {
   display: block;
 }
