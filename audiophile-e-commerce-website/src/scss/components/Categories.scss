@@ -1,7 +1,7 @@
 @use '../util' as u;
 
 .categories {
-    margin: u.toRem(96) auto u.toRem(120);
+    margin: 0 auto u.toRem(120);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);

@@ -19,12 +19,14 @@
 .category__link__img {
   display: block;
   position: absolute;
-  width: 45%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: -30%;
 }
-@media (min-width: 56.25em) {
+@media (min-width: 43.75em) {
   .category__link__img {
-    width: 50%;
+    top: -25%;
   }
 }
 .category__link h6 {
