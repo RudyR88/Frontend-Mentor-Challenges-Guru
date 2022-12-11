@@ -44,6 +44,15 @@ body {
 .link-btn--black:hover, .link-btn--black:focus {
   background-color: var(--hover-clr2);
 }
+.link-btn--transp {
+  background-color: transparent;
+  border: solid 1px var(--dark-clr);
+  color: var(--dark-clr);
+}
+.link-btn--transp:hover, .link-btn--transp:focus {
+  background-color: var(--dark-clr);
+  color: var(--light-clr);
+}
 
 h1, h2, h3, h4, h5, span, p, a {
   margin-top: 0;
@@ -141,9 +150,12 @@ h6 {
   --hero-tablet: url("../assets/home/tablet/image-header.jpg");
   --hero-desktop: url("../assets/home/desktop/image-hero.jpg");
   --circles: url("../assets/home/desktop/pattern-circles.svg");
-  --feat-prod-mobile: url("../assets/home/mobile/image-speaker-zx9.png");
-  --feat-prod-tablet: url("../assets/home/tablet/image-speaker-zx9.png");
-  --feat-prod-desktop: url("../assets/home/desktop/image-speaker-zx9.png");
+  --feat-mobile: url("../assets/home/mobile/image-speaker-zx9.png");
+  --feat-tablet: url("../assets/home/tablet/image-speaker-zx9.png");
+  --feat-desktop: url("../assets/home/desktop/image-speaker-zx9.png");
+  --feat-two-mobile: url("../assets/home/mobile/image-speaker-zx7.jpg");
+  --feat-two-tablet: url("../assets/home/tablet/image-speaker-zx7.jpg");
+  --feat-two-desktop: url("../assets/home/desktop/image-speaker-zx7.jpg");
 }
 
 .container {

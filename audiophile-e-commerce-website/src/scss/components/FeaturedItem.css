@@ -11,11 +11,14 @@
 }
 @media (min-width: 43.75em) {
   .featured {
+    margin: 0 auto 2rem;
     height: 45rem;
   }
 }
 @media (min-width: 56.25em) {
   .featured {
+    height: 35rem;
+    margin: 0 auto 3rem;
     justify-items: flex-end;
     padding-right: 5rem;
     height: 35rem;
@@ -47,14 +50,14 @@
   top: 4.0625rem;
   width: 10rem;
   height: 11.875rem;
-  background: var(--feat-prod-mobile) center/cover no-repeat;
+  background: var(--feat-mobile) center/cover no-repeat;
   z-index: -8;
 }
 @media (min-width: 43.75em) {
   .featured__img {
     width: 11.375rem;
     height: 13.625rem;
-    background: var(--feat-prod-tablet) center/cover no-repeat;
+    background: var(--feat-tablet) center/cover no-repeat;
   }
 }
 @media (min-width: 56.25em) {
@@ -64,7 +67,7 @@
     height: 27.8125rem;
     left: 117px;
     top: 120px;
-    background: var(--feat-prod-desktop) center/cover no-repeat;
+    background: var(--feat-desktop) center/cover no-repeat;
   }
 }
 .featured__content {
