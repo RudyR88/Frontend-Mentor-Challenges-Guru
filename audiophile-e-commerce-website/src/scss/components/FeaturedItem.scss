@@ -1,0 +1,110 @@
+@use '../util' as u;
+
+.featured {
+    position: relative;
+    height: u.toRem(600);
+    border-radius: 8px;
+    background-color: var(--accent-clr);
+    margin:0 auto u.toRem(24);
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    z-index: 1;
+
+    @include u.breakpoint('medium'){
+        height: u.toRem(720);
+    }
+
+    @include u.breakpoint('large'){
+        justify-items: flex-end;
+        padding-right: u.toRem(80);
+        height: u.toRem(560);
+    }
+
+    .decoration {
+        position: absolute;
+        place-self: center;
+        top: -20.17%;
+        width: u.toRem(558);
+        z-index: -9;
+
+        @include u.breakpoint('medium'){
+            top: -290px;
+            width: u.toRem(944);
+        }
+
+        @include u.breakpoint('large'){
+            place-self: unset;
+            left: -180px;
+            top: -10px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        place-self: center;
+        top: u.toRem(65);
+        width: u.toRem(160);
+        height: u.toRem(190);
+        background: var(--feat-prod-mobile) center/cover no-repeat;
+        z-index: -8;
+
+        @include u.breakpoint('medium'){
+            width: u.toRem(182);
+            height: u.toRem(218);
+            background: var(--feat-prod-tablet) center/cover no-repeat;
+        }
+
+        @include u.breakpoint('large'){
+            place-self: unset;
+            width: u.toRem(377);
+            height: u.toRem(445);
+            left: 117px;
+            top: 120px;
+            background: var(--feat-prod-desktop) center/cover no-repeat;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+
+        @include u.breakpoint('large'){
+            text-align: left;
+            width: 349px;
+            align-items: flex-start;
+        }
+
+        h1 {
+            margin: u.toRem(294) 0 u.toRem(24);
+            width: u.toRem(250);
+            color: var(--title-clr);
+
+            @include u.breakpoint('medium'){
+                margin: u.toRem(349) 0 u.toRem(24);
+                width: u.toRem(261);
+            }
+
+            @include u.breakpoint('large'){
+                margin: u.toRem(133) 0 u.toRem(24);
+                width: u.toRem(261);
+            }
+        }
+
+        p {
+            color: var(--light-clr);
+            opacity: 0.75;
+            width: u.toRem(280);
+            margin-bottom: u.toRem(24);
+
+            @include u.breakpoint('medium'){
+                width: u.toRem(349);
+                margin-bottom: u.toRem(40);
+            }
+        }
+        
+    }
+}

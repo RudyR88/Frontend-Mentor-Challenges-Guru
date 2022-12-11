@@ -3,7 +3,7 @@
 .category__link {
     position: relative;
     background-color: var(--category-clr);
-    height: 165px;
+    height: u.toRem(165);
     width: 100%;
     border-radius: 8px;
     display: flex;
@@ -14,7 +14,7 @@
     padding-bottom: 22px;
 
     @include u.breakpoint('large'){
-        height: 204px;
+        height: u.toRem(204);
     }
 
     &__img {

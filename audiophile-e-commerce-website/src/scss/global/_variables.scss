@@ -9,10 +9,17 @@
     --title-clr: hsl(0, 0%, 98%);
     --category-clr: hsl(0, 0%, 94%);
     --hover-clr: hsl(21, 94%, 75%);
+    --hover-clr2: hsla(0, 0%, 30%, 1);
     --light-clr: hsl(0, 0%, 100%);
     --dark-clr: hsl(0, 0%, 0%);
 
     --hero-mobile: url('../assets/home/mobile/image-header.jpg');
     --hero-tablet: url('../assets/home/tablet/image-header.jpg');
     --hero-desktop: url('../assets/home/desktop/image-hero.jpg');
+
+    --circles: url('../assets/home/desktop/pattern-circles.svg');
+
+    --feat-prod-mobile: url('../assets/home/mobile/image-speaker-zx9.png');
+    --feat-prod-tablet: url('../assets/home/tablet/image-speaker-zx9.png');
+    --feat-prod-desktop: url('../assets/home/desktop/image-speaker-zx9.png');
 }

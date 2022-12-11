@@ -47,7 +47,7 @@
             margin-bottom: u.toRem(28);
 
             @include u.breakpoint('medium'){
-                width: 349px;
+                width: u.toRem(349);
                 margin-bottom: u.toRem(40);
             }
         }

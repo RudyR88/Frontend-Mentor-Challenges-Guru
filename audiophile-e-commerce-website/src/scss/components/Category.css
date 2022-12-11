@@ -1,7 +1,7 @@
 .category__link {
   position: relative;
   background-color: var(--category-clr);
-  height: 165px;
+  height: 10.3125rem;
   width: 100%;
   border-radius: 8px;
   display: flex;
@@ -13,7 +13,7 @@
 }
 @media (min-width: 56.25em) {
   .category__link {
-    height: 204px;
+    height: 12.75rem;
   }
 }
 .category__link__img {

@@ -1,0 +1,112 @@
+.featured {
+  position: relative;
+  height: 37.5rem;
+  border-radius: 8px;
+  background-color: var(--accent-clr);
+  margin: 0 auto 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  z-index: 1;
+}
+@media (min-width: 43.75em) {
+  .featured {
+    height: 45rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .featured {
+    justify-items: flex-end;
+    padding-right: 5rem;
+    height: 35rem;
+  }
+}
+.featured .decoration {
+  position: absolute;
+  place-self: center;
+  top: -20.17%;
+  width: 34.875rem;
+  z-index: -9;
+}
+@media (min-width: 43.75em) {
+  .featured .decoration {
+    top: -290px;
+    width: 59rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .featured .decoration {
+    place-self: unset;
+    left: -180px;
+    top: -10px;
+  }
+}
+.featured__img {
+  position: absolute;
+  place-self: center;
+  top: 4.0625rem;
+  width: 10rem;
+  height: 11.875rem;
+  background: var(--feat-prod-mobile) center/cover no-repeat;
+  z-index: -8;
+}
+@media (min-width: 43.75em) {
+  .featured__img {
+    width: 11.375rem;
+    height: 13.625rem;
+    background: var(--feat-prod-tablet) center/cover no-repeat;
+  }
+}
+@media (min-width: 56.25em) {
+  .featured__img {
+    place-self: unset;
+    width: 23.5625rem;
+    height: 27.8125rem;
+    left: 117px;
+    top: 120px;
+    background: var(--feat-prod-desktop) center/cover no-repeat;
+  }
+}
+.featured__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+@media (min-width: 56.25em) {
+  .featured__content {
+    text-align: left;
+    width: 349px;
+    align-items: flex-start;
+  }
+}
+.featured__content h1 {
+  margin: 18.375rem 0 1.5rem;
+  width: 15.625rem;
+  color: var(--title-clr);
+}
+@media (min-width: 43.75em) {
+  .featured__content h1 {
+    margin: 21.8125rem 0 1.5rem;
+    width: 16.3125rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .featured__content h1 {
+    margin: 8.3125rem 0 1.5rem;
+    width: 16.3125rem;
+  }
+}
+.featured__content p {
+  color: var(--light-clr);
+  opacity: 0.75;
+  width: 17.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 43.75em) {
+  .featured__content p {
+    width: 21.8125rem;
+    margin-bottom: 2.5rem;
+  }
+}/*# sourceMappingURL=FeaturedItem.css.map */

@@ -1,20 +1,31 @@
 @use '../util' as u;
 
-.btn {
+.link-btn {
     cursor: pointer;
     border: none;
+    text-decoration: none;
     font-family: inherit;
     text-transform: uppercase;
+    text-align: center;
     padding: u.toRem(15);
     width: u.toRem(160);
     transition: background-color .3s ease-in-out;
 
-    &-orange {
+    &--orange {
         background-color: var(--accent-clr);
         color: var(--light-clr);
 
         &:hover, &:focus {
             background-color: var(--hover-clr);
+        }
+    }
+
+    &--black {
+        background-color: var(--dark-clr);
+        color: var(--light-clr);
+
+        &:hover, &:focus {
+            background-color: var(--hover-clr2);
         }
     }
 }
