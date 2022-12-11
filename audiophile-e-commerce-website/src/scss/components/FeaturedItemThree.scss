@@ -1,0 +1,59 @@
+@use '../util' as u;
+
+.featured-three {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    row-gap: u.toRem(24);
+    margin: 0 auto u.toRem(120);
+
+    @include u.breakpoint('medium'){
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        height: u.toRem(320);
+        column-gap: u.toRem(11);
+        margin-bottom: u.toRem(96);
+    }
+
+    @include u.breakpoint('large'){
+        column-gap: u.toRem(30);
+        margin-bottom: u.toRem(200);
+    }
+
+    &__dec {
+        background: var(--feat-three-mobile);
+
+        @include u.breakpoint('medium'){
+            background: var(--feat-three-tablet);
+        }
+
+        @include u.breakpoint('medium'){
+            background: var(--feat-three-desktop);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: u.toRem(24);
+        background: var(--category-clr);
+
+        @include u.breakpoint('medium'){
+            padding-left: u.toRem(41);
+        }
+
+        @include u.breakpoint('large'){
+            padding-left: u.toRem(95);
+        }
+    }
+
+    &__dec, &__content {
+        height: u.toRem(200);
+        border-radius: 8px;
+
+        @include u.breakpoint('medium'){
+            height: 100%;
+        }
+    }
+}

@@ -49,13 +49,13 @@
         top: u.toRem(65);
         width: u.toRem(160);
         height: u.toRem(190);
-        background: var(--feat-mobile) center/cover no-repeat;
+        background: var(--feat-mobile);
         z-index: -8;
 
         @include u.breakpoint('medium'){
             width: u.toRem(182);
             height: u.toRem(218);
-            background: var(--feat-tablet) center/cover no-repeat;
+            background: var(--feat-tablet);
         }
 
         @include u.breakpoint('large'){
@@ -64,7 +64,7 @@
             height: u.toRem(445);
             left: 117px;
             top: 120px;
-            background: var(--feat-desktop) center/cover no-repeat;
+            background: var(--feat-desktop);
         }
     }
 

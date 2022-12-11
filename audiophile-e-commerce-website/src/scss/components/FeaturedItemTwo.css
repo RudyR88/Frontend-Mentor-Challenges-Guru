@@ -5,20 +5,23 @@
   padding-left: 1.5rem;
   justify-content: center;
   margin: 0 auto 1.5rem;
-  background: var(--feat-two-mobile) center/cover no-repeat;
+  background: var(--feat-two-mobile);
   border-radius: 8px;
 }
 @media (min-width: 43.75em) {
   .featured-two {
     margin: 0 auto 2rem;
     padding-left: 3.875rem;
-    background: var(--feat-two-tablet) center/cover no-repeat;
+    background: var(--feat-two-tablet);
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 62.5em) {
   .featured-two {
     margin: 0 auto 3rem;
     padding-left: 5.9375rem;
-    background: var(--feat-two-desktop) center/cover no-repeat;
+    background: var(--feat-two-desktop);
   }
+}
+.featured-two h4 {
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=FeaturedItemTwo.css.map */

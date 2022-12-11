@@ -5,6 +5,7 @@ import ProductHero from '../components/ProductHero';
 import FeaturedItem from '../components/FeaturedItem';
 import '../scss/pages/Home.css';
 import FeaturedItemTwo from '../components/FeaturedItemTwo';
+import FeaturedItemThree from '../components/FeaturedItemThree';
 
 function Home() {
     return (
@@ -28,6 +29,10 @@ function Home() {
                 <FeaturedItemTwo
                     productName = 'zx7 speaker'
                     productLink = '/speakers/zx7'
+                />
+                <FeaturedItemThree
+                    productName = 'yx1 earphones'
+                    productLink = '/earphones/yx1'
                 />
             </main>
         </div>   

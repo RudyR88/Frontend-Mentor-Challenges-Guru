@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--hero-mobile) bottom/cover no-repeat;
+  background: var(--hero-mobile);
   margin-bottom: 6rem;
 }
 .product-hero__content {
@@ -51,12 +51,12 @@
 @media (min-width: 43.75em) {
   .product-hero {
     height: 45.5625rem;
-    background: var(--hero-tablet) bottom/cover no-repeat;
+    background: var(--hero-tablet);
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 62.5em) {
   .product-hero {
-    background: var(--hero-desktop) bottom/cover no-repeat;
+    background: var(--hero-desktop);
     background-color: var(--header-bg-clr);
   }
   .product-hero__content {

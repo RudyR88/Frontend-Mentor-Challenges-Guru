@@ -146,16 +146,19 @@ h6 {
   --hover-clr2: hsla(0, 0%, 30%, 1);
   --light-clr: hsl(0, 0%, 100%);
   --dark-clr: hsl(0, 0%, 0%);
-  --hero-mobile: url("../assets/home/mobile/image-header.jpg");
-  --hero-tablet: url("../assets/home/tablet/image-header.jpg");
-  --hero-desktop: url("../assets/home/desktop/image-hero.jpg");
+  --hero-mobile: url("../assets/home/mobile/image-header.jpg") bottom/cover no-repeat;
+  --hero-tablet: url("../assets/home/tablet/image-header.jpg") bottom/cover no-repeat;
+  --hero-desktop: url("../assets/home/desktop/image-hero.jpg") bottom/cover no-repeat;
   --circles: url("../assets/home/desktop/pattern-circles.svg");
-  --feat-mobile: url("../assets/home/mobile/image-speaker-zx9.png");
-  --feat-tablet: url("../assets/home/tablet/image-speaker-zx9.png");
-  --feat-desktop: url("../assets/home/desktop/image-speaker-zx9.png");
-  --feat-two-mobile: url("../assets/home/mobile/image-speaker-zx7.jpg");
-  --feat-two-tablet: url("../assets/home/tablet/image-speaker-zx7.jpg");
-  --feat-two-desktop: url("../assets/home/desktop/image-speaker-zx7.jpg");
+  --feat-mobile: url("../assets/home/mobile/image-speaker-zx9.png") center/cover no-repeat;
+  --feat-tablet: url("../assets/home/tablet/image-speaker-zx9.png") center/cover no-repeat;
+  --feat-desktop: url("../assets/home/desktop/image-speaker-zx9.png") center/cover no-repeat;
+  --feat-two-mobile: url("../assets/home/mobile/image-speaker-zx7.jpg") center/cover no-repeat;
+  --feat-two-tablet: url("../assets/home/tablet/image-speaker-zx7.jpg") center/cover no-repeat;
+  --feat-two-desktop: url("../assets/home/desktop/image-speaker-zx7.jpg") center/cover no-repeat;
+  --feat-three-mobile: url("../assets/home/mobile/image-earphones-yx1.jpg") center/cover no-repeat;
+  --feat-three-tablet: url("../assets/home/tablet/image-earphones-yx1.jpg") center/cover no-repeat;
+  --feat-three-desktop: url("../assets/home/desktop/image-earphones-yx1.jpg") center/cover no-repeat;
 }
 
 .container {
@@ -168,7 +171,7 @@ h6 {
     max-width: 48em;
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 62.5em) {
   .container {
     max-width: 69.375em;
   }
@@ -183,7 +186,7 @@ h6 {
     max-width: 48em;
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 62.5em) {
   .no-margin-container {
     max-width: 69.375em;
   }
@@ -206,7 +209,7 @@ h6 {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
-@media (min-width: 56.25em) {
+@media (min-width: 62.5em) {
   .grid-2x1 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;

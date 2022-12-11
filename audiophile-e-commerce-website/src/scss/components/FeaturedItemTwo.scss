@@ -7,18 +7,22 @@
     padding-left: u.toRem(24);
     justify-content: center;
     margin: 0 auto u.toRem(24);
-    background: var(--feat-two-mobile) center/cover no-repeat;
+    background: var(--feat-two-mobile);
     border-radius: 8px;
 
     @include u.breakpoint('medium'){
         margin: 0 auto u.toRem(32);
         padding-left: u.toRem(62);
-        background: var(--feat-two-tablet) center/cover no-repeat;
+        background: var(--feat-two-tablet);
     }
 
     @include u.breakpoint('large'){
         margin: 0 auto u.toRem(48);
         padding-left: u.toRem(95);
-        background: var(--feat-two-desktop) center/cover no-repeat;
+        background: var(--feat-two-desktop);
+    }
+
+    h4 {
+        margin-bottom: u.toRem(32);
     }
 }

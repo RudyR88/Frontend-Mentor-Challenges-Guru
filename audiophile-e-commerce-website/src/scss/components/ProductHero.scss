@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--hero-mobile) bottom/cover no-repeat;
+    background: var(--hero-mobile);
     margin-bottom: u.toRem(96);
 
     &__content{
@@ -55,11 +55,11 @@
 
     @include u.breakpoint('medium'){
         height: u.toRem(729);
-        background: var(--hero-tablet) bottom/cover no-repeat;
+        background: var(--hero-tablet);
     }
 
     @include u.breakpoint('large'){
-        background: var(--hero-desktop) bottom/cover no-repeat;
+        background: var(--hero-desktop);
         background-color: var(--header-bg-clr);
 
         &__content {
