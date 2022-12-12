@@ -1,0 +1,68 @@
+@use '../util' as u;
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: u.toRem(40);
+    align-items: center;
+    text-align: center;
+    margin: 0 auto u.toRem(120);
+
+    @include u.breakpoint('medium'){
+        margin-bottom: u.toRem(96);
+    }
+
+    @include u.breakpoint('large'){
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        gap: u.toRem(125);
+        margin-bottom: u.toRem(200);
+    }
+
+    &__dec {
+        order: 1;
+        align-self: stretch;
+        height: u.toRem(300);
+        background: var(--about-mobile);
+        border-radius: 8px;
+
+        @include u.breakpoint('medium'){
+            background: var(--about-tablet);
+        }
+
+        @include u.breakpoint('medium'){
+            background: var(--about-tablet);
+        }
+
+        @include u.breakpoint('large'){
+            order: 2;
+            height: u.toRem(588);
+            width: u.toRem(540);
+            background: var(--about-desktop);
+        }
+    }
+
+    &__content {
+        order: 2;
+        width: u.toRem(327);
+
+        @include u.breakpoint('medium'){
+            width: u.toRem(573);
+        }
+
+        @include u.breakpoint('large'){
+            order: 1;
+            width: u.toRem(445);
+        }
+
+        h2 {
+            margin-bottom: u.toRem(32);
+        }
+
+        p {
+            color: var(--dark-clr);
+            opacity: 0.5;
+        }
+    }
+}

@@ -13,11 +13,11 @@
     --light-clr: hsl(0, 0%, 100%);
     --dark-clr: hsl(0, 0%, 0%);
 
+    --circles: url('../assets/home/desktop/pattern-circles.svg');
+
     --hero-mobile: url('../assets/home/mobile/image-header.jpg') bottom/cover no-repeat;
     --hero-tablet: url('../assets/home/tablet/image-header.jpg') bottom/cover no-repeat;
     --hero-desktop: url('../assets/home/desktop/image-hero.jpg') bottom/cover no-repeat;
-
-    --circles: url('../assets/home/desktop/pattern-circles.svg');
 
     --feat-mobile: url('../assets/home/mobile/image-speaker-zx9.png') center/cover no-repeat;
     --feat-tablet: url('../assets/home/tablet/image-speaker-zx9.png') center/cover no-repeat;
@@ -30,4 +30,8 @@
     --feat-three-mobile: url('../assets/home/mobile/image-earphones-yx1.jpg') center/cover no-repeat;
     --feat-three-tablet: url('../assets/home/tablet/image-earphones-yx1.jpg') center/cover no-repeat;
     --feat-three-desktop: url('../assets/home/desktop/image-earphones-yx1.jpg') center/cover no-repeat;
+
+    --about-mobile: url('../assets/shared/mobile/image-best-gear.jpg') center/cover no-repeat;
+    --about-tablet: url('../assets/shared/tablet/image-best-gear.jpg') center/cover no-repeat;
+    --about-desktop: url('../assets/shared/desktop/image-best-gear.jpg') center/cover no-repeat;
 }
