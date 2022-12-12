@@ -38,29 +38,6 @@ header {
                 .links {display: flex;}
             }
         }
-
-        ul {
-            display: flex;
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-
-            li + li {
-                margin-left: u.toRem(31);
-            }
-
-            a {
-                color: var(--title-clr);
-                text-transform: uppercase;
-                text-decoration: none;
-                letter-spacing: 2px;
-                transition: color .3s ease-in-out;
-
-                &:hover, &:focus {
-                    color: var(--accent-clr);
-                }
-            }
-        }
     }
 
     hr {

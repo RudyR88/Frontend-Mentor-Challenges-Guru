@@ -7,6 +7,7 @@ import '../scss/pages/Home.css';
 import FeaturedItemTwo from '../components/FeaturedItemTwo';
 import FeaturedItemThree from '../components/FeaturedItemThree';
 import About from '../components/About';
+import Footer from '../components/Footer';
 
 function Home() {
     return (
@@ -35,15 +36,9 @@ function Home() {
                     productName = 'yx1 earphones'
                     productLink = '/earphones/yx1'
                 />
-                <About
-                    aboutTxt = {`Located at the heart of New York City, Audiophile is the 
-                        premier store for high end headphones, earphones, speakers, and audio 
-                        accessories. We have a large showroom and luxury demonstration rooms 
-                        available for you to browse and experience a wide range of our products. 
-                        Stop by our store to meet some of the fantastic people who make Audiophile 
-                        the best place to buy your portable audio equipment.`}
-                />
             </main>
+            <About />
+            <Footer />
         </div>   
     );
 }

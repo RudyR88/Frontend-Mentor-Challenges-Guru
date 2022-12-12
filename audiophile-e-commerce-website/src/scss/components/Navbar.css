@@ -40,25 +40,6 @@ header .nav-left .links {
     display: flex;
   }
 }
-header .nav ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-header .nav ul li + li {
-  margin-left: 1.9375rem;
-}
-header .nav ul a {
-  color: var(--title-clr);
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-  transition: color 0.3s ease-in-out;
-}
-header .nav ul a:hover, header .nav ul a:focus {
-  color: var(--accent-clr);
-}
 header hr {
   margin: 0;
   opacity: 0.1;
