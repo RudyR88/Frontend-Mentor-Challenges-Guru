@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import Navlinks from './Navlinks';
 import '../scss/components/Navbar.css';
 
@@ -8,7 +9,7 @@ function Navbar() {
             <nav className='nav container flex-between'>
                 <div className='nav-left flex-between'>
                     <img className='mobile-menu' src='../assets/shared/tablet/icon-hamburger.svg' alt='mobile menu'/>
-                    <a className='logo' href={'/'}><img src='../assets/shared/desktop/logo.svg' alt='audiophile'/></a>
+                    <Link className='logo'to='/'><img src='../assets/shared/desktop/logo.svg' alt='audiophile'/></Link>
                     <Navlinks />
                 </div>
                 <img className='cart' src='../assets/shared/desktop/icon-cart.svg' alt='cart'/>

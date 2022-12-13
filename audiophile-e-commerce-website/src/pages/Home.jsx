@@ -1,6 +1,5 @@
 import React from 'react';
 import Categories from '../components/Categories';
-import Navbar from '../components/Navbar';
 import ProductHero from '../components/ProductHero';
 import FeaturedItem from '../components/FeaturedItem';
 import '../scss/pages/Home.css';
@@ -11,9 +10,8 @@ import Footer from '../components/Footer';
 
 function Home() {
     return (
-        <div className='home'>
-            <Navbar />
-            <main role='main'>
+        <>
+            <main className='home' role='main'>
                 <ProductHero
                     productName = 'xx99 mark ii headphones'
                     productDesc = {`Experience natural, lifelike audio 
@@ -39,7 +37,7 @@ function Home() {
             </main>
             <About />
             <Footer />
-        </div>   
+        </>   
     );
 }
 

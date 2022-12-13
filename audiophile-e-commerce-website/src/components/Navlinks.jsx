@@ -1,13 +1,14 @@
 import React from 'react';
-import '../scss/components/Navlinks.css'
+import {Link} from 'react-router-dom';
+import '../scss/components/Navlinks.css';
 
 export default function Navlinks() {
   return (
     <ul className='links subtitle'>
-        <li><a href={'/'}>home</a></li>
-        <li><a href={'/headphones'}>headphones</a></li>
-        <li><a href={'/speakers'}>speakers</a></li>
-        <li><a href={'/earphones'}>earphones</a></li>
+        <li><Link to = '/'>home</Link></li>
+        <li><Link to = '/headphones'>headphones</Link></li>
+        <li><Link to = '/speakers'>speakers</Link></li>
+        <li><Link to = '/earphones'>earphones</Link></li>
     </ul>
   );
 }
