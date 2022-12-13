@@ -6,7 +6,6 @@ import '../scss/pages/Home.css';
 import FeaturedItemTwo from '../components/FeaturedItemTwo';
 import FeaturedItemThree from '../components/FeaturedItemThree';
 import About from '../components/About';
-import Footer from '../components/Footer';
 
 function Home() {
     return (
@@ -16,7 +15,7 @@ function Home() {
                     productName = 'xx99 mark ii headphones'
                     productDesc = {`Experience natural, lifelike audio 
                         and exceptional build quality made for the passionate music enthusiast.`}
-                    productLink = '/headphones/xx99-mark-ii'
+                    productLink = '/headphones/xx99-mark-two-headphones'
                 />
                 <Categories />
                 <FeaturedItem
@@ -24,19 +23,18 @@ function Home() {
                     productName = 'zx9 speaker'
                     productDesc = {`Upgrade to premium speakers that are phenomenally 
                         built to deliver truly remarkable sound.`}
-                    productLink = '/speakers/zx9'
+                    productLink = '/speakers/zx9-speaker'
                 />
                 <FeaturedItemTwo
                     productName = 'zx7 speaker'
-                    productLink = '/speakers/zx7'
+                    productLink = '/speakers/zx7-speaker'
                 />
                 <FeaturedItemThree
                     productName = 'yx1 earphones'
-                    productLink = '/earphones/yx1'
+                    productLink = '/earphones/yx1-earphones'
                 />
             </main>
             <About />
-            <Footer />
         </>   
     );
 }

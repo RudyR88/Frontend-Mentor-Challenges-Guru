@@ -1,0 +1,40 @@
+@use '../util' as u;
+
+.category {
+    text-align: center;
+    margin-bottom: u.toRem(120);
+
+    @include u.breakpoint('large'){
+        margin-bottom: u.toRem(160);
+    }
+
+    &__title {
+        background-color: var(--header-bg-clr);
+        padding-top: u.toRem(122);
+        padding-bottom: u.toRem(32);
+        letter-spacing: 2px;
+        color: var(--light-clr);
+        margin-bottom: u.toRem(64);
+
+        @include u.breakpoint('medium'){
+            letter-spacing: 1.4px;
+            margin-bottom: u.toRem(120);
+        }
+
+        @include u.breakpoint('large'){
+            letter-spacing: 1.5px;
+            margin-bottom: u.toRem(160);
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: u.toRem(120);
+
+        @include u.breakpoint('large'){
+            gap: u.toRem(160);
+        }
+    }
+}

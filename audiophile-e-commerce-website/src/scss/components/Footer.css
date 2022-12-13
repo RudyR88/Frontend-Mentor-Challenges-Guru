@@ -13,7 +13,7 @@
     grid-template-areas: "logo logo" "links links" "about about" "copyright social";
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .footer__content {
     grid-template-areas: "logo links" "about social" "copyright .";
   }
@@ -57,7 +57,7 @@
     margin-left: 1.9375rem;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .footer__content .links {
     place-self: flex-end;
   }
@@ -74,7 +74,7 @@
     margin-bottom: 5rem;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .footer__content p {
     width: 33.75rem;
     margin-bottom: 3.5rem;
@@ -116,7 +116,7 @@
     margin-bottom: 2.875rem;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .footer__content .social {
     place-self: flex-end;
     margin-bottom: 3rem;

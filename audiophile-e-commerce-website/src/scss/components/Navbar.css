@@ -7,7 +7,7 @@ header {
 header .nav {
   padding: 2rem 0;
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   header .nav {
     padding: 2rem 0 2.25rem;
   }
@@ -29,7 +29,7 @@ header .nav-left .links {
     width: 27.5%;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   header .nav-left {
     width: 73.5%;
   }
@@ -51,7 +51,7 @@ header hr {
     opacity: 0.2;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   header hr {
     max-width: 69.375em;
     opacity: 0.2;

@@ -1,0 +1,98 @@
+@use '../util' as u;
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: u.toRem(32);
+
+    &:nth-child(even){
+        @include u.breakpoint('large'){
+            flex-direction: row-reverse;
+        }
+    }
+
+    @include u.breakpoint('medium'){
+        gap: u.toRem(52);
+    }
+
+    @include u.breakpoint('large'){
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__preview {
+        display: block;
+        border-radius: 8px;
+        width: u.toRem(327);
+        margin: 0 auto;
+        height: u.toRem(327);
+        object-fit: cover;
+
+        @include u.breakpoint('medium'){
+            width: u.toRem(689);
+            height: u.toRem(352);
+        }
+
+        @include u.breakpoint('large'){
+            width: u.toRem(540);
+            height: u.toRem(560);
+        }
+    }
+
+    &__content {
+
+        @include u.breakpoint('large'){
+            width: 50%;
+            text-align: left;
+        }
+
+        span {
+            display: block;
+            margin-bottom: u.toRem(24);
+
+            @include u.breakpoint('medium'){
+                margin-bottom: u.toRem(16);
+            }
+        }
+
+        h2 {
+            color: var(--dark-clr);
+            width: u.toRem(327);
+            margin: 0 auto u.toRem(24);
+
+            @include u.breakpoint('medium'){
+                margin-bottom: u.toRem(32);
+            }
+
+            @include u.breakpoint('large'){
+                margin-left: 0;
+            }
+        }
+        
+        p {
+            width: u.toRem(327);
+            margin: 0 auto;
+            opacity: 0.5;
+            margin-bottom: u.toRem(24);
+
+            @include u.breakpoint('medium'){
+                width: u.toRem(572);
+            }
+
+            @include u.breakpoint('large'){
+                width: u.toRem(445);
+            }
+        }
+
+        a {
+            display: block;
+            margin: 0 auto;
+
+            @include u.breakpoint('large'){
+                margin-left: 0;
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../scss/components/FeaturedItem.css';
 
 function FeaturedItem({decoration, productName, productDesc, productLink}) {
@@ -9,7 +10,7 @@ function FeaturedItem({decoration, productName, productDesc, productLink}) {
             <div className='featured__content'>
                 <h1 className='uppercase'>{productName}</h1>
                 <p>{productDesc}</p>
-                <a href={productLink} className='link-btn btn--txt link-btn--black'>see product</a>
+                <Link to={productLink} className='link-btn btn--txt link-btn--black'>see product</Link>
             </div>
         </section>
     );

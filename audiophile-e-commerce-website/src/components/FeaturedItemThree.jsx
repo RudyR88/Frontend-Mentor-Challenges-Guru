@@ -1,5 +1,6 @@
-import React from 'react'
-import '../scss/components/FeaturedItemThree.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../scss/components/FeaturedItemThree.css';
 
 function FeaturedItemThree({productName, productLink}) {
     return (
@@ -7,10 +8,10 @@ function FeaturedItemThree({productName, productLink}) {
             <div className='featured-three__dec' aria-hidden='true'></div>
             <div className='featured-three__content'>
                 <h4 className='uppercase'>{productName}</h4>
-                <a href={productLink} className='link-btn btn--txt link-btn--transp'>see product</a>
+                <Link to={productLink} className='link-btn btn--txt link-btn--transp'>see product</Link>
             </div>
         </section>
-    )
+    );
 }
 
 export default FeaturedItemThree

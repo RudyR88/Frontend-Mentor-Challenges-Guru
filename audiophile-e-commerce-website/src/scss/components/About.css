@@ -11,7 +11,7 @@
     margin-bottom: 6rem;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .about {
     flex-direction: row;
     text-align: left;
@@ -37,7 +37,7 @@
     background: var(--about-tablet);
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .about__dec {
     order: 2;
     height: 36.75rem;
@@ -54,7 +54,7 @@
     width: 35.8125rem;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .about__content {
     order: 1;
     width: 27.8125rem;

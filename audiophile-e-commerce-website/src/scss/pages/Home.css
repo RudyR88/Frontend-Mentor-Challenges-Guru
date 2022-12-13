@@ -22,7 +22,7 @@
     margin: 0 auto;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .home__hero {
     height: 39.5625rem;
     text-align: left;

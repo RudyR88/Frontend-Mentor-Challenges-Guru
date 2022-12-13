@@ -17,6 +17,7 @@ body {
   font-size: 0.9375rem;
   line-height: 1.5625rem;
   position: relative;
+  color: var(--dark-clr);
 }
 
 .link-btn {
@@ -185,7 +186,7 @@ h6 {
     max-width: 48em;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .container {
     max-width: 69.375em;
   }
@@ -200,7 +201,7 @@ h6 {
     max-width: 48em;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .no-margin-container {
     max-width: 69.375em;
   }
@@ -223,7 +224,7 @@ h6 {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .grid-2x1 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;

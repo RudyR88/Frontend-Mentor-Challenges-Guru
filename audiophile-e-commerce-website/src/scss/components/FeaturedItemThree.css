@@ -15,7 +15,7 @@
     margin-bottom: 6rem;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .featured-three {
     -moz-column-gap: 1.875rem;
          column-gap: 1.875rem;
@@ -47,7 +47,7 @@
     padding-left: 2.5625rem;
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .featured-three__content {
     padding-left: 5.9375rem;
   }

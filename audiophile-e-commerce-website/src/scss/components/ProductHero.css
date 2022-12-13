@@ -54,7 +54,7 @@
     background: var(--hero-tablet);
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .product-hero {
     background: var(--hero-desktop);
     background-color: var(--header-bg-clr);

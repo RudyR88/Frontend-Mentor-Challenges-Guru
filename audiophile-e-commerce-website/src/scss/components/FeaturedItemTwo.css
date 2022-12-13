@@ -15,7 +15,7 @@
     background: var(--feat-two-tablet);
   }
 }
-@media (min-width: 62.5em) {
+@media (min-width: 68.75em) {
   .featured-two {
     margin: 0 auto 3rem;
     padding-left: 5.9375rem;
