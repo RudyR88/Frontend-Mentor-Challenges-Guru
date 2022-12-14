@@ -40,3 +40,22 @@
         }
     }
 }
+
+.btn-link{
+    cursor: pointer;
+    text-transform: capitalize;
+    background: transparent;
+    border: none;
+
+    &__back{
+        margin-top: u.toRem(106);
+        margin-bottom: u.toRem(24);
+        color: var(--dark-clr);
+        opacity: 0.5;
+
+        @include u.breakpoint('large'){
+            margin-top: u.toRem(176);
+            margin-bottom: u.toRem(56);
+        }
+    }
+}

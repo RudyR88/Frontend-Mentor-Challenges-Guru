@@ -55,6 +55,25 @@ body {
   color: var(--light-clr);
 }
 
+.btn-link {
+  cursor: pointer;
+  text-transform: capitalize;
+  background: transparent;
+  border: none;
+}
+.btn-link__back {
+  margin-top: 6.625rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-clr);
+  opacity: 0.5;
+}
+@media (min-width: 68.75em) {
+  .btn-link__back {
+    margin-top: 11rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
 h1, h2, h3, h4, h5, span, p, a {
   margin-top: 0;
 }
@@ -143,6 +162,12 @@ h6 {
   font-size: 0.8125rem;
   line-height: 1.125rem;
   letter-spacing: 1px;
+}
+
+.btn-link--txt {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.5625rem;
 }
 
 :root {

@@ -11,11 +11,10 @@ import '../scss/pages/CategoryPage.css';
 
 export default function CategoryPage() {
     const {category} = useParams();
-    const productCategories = new Set(data.map(item => item.category));
-    const validCategory = productCategories.has(category);
-    let itemComps;
+    const isValidCategory = data.filter(item => item.category === category).length >= 1 ? true : false;
+    let itemComps = null;
 
-    if(validCategory){
+    if(isValidCategory){
         const items = data.filter(item => item.category === category).reverse();
         itemComps = items.map(
             item => item.new ? <NewProduct key={uuidv4()} item={item} category={category} /> 
@@ -24,7 +23,7 @@ export default function CategoryPage() {
   return (
     <>
         {
-            validCategory ?
+            isValidCategory ?
             <>
                 <main className='category'>
                     <h2 className='category__title uppercase'>{category}</h2>

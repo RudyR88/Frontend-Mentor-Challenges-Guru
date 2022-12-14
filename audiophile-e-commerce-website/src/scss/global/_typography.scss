@@ -86,3 +86,9 @@ h6 {
     line-height: u.toRem(18);
     letter-spacing: 1px;
 }
+
+.btn-link--txt {
+    font-size: u.toRem(15);
+    font-weight: 500;
+    line-height: u.toRem(25);
+}

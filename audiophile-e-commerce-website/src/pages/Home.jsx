@@ -2,10 +2,10 @@ import React from 'react';
 import Categories from '../components/Categories';
 import ProductHero from '../components/ProductHero';
 import FeaturedItem from '../components/FeaturedItem';
-import '../scss/pages/Home.css';
 import FeaturedItemTwo from '../components/FeaturedItemTwo';
 import FeaturedItemThree from '../components/FeaturedItemThree';
 import About from '../components/About';
+import '../scss/pages/Home.css';
 
 function Home() {
     return (
