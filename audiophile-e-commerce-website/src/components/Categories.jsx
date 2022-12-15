@@ -1,11 +1,9 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid';
-import Category from './Category'
-import '../scss/components/Categories.css'
-// import data from '../js/data.json'
+import Category from './Category';
+import '../scss/components/Categories.css';
 
-function Categories() {
-    // const categories = new Set(data.map(itemInfo => itemInfo.category));
+export default function Categories() {
     return (
         <section className='categories no-margin-container'>
             <Category
@@ -27,7 +25,5 @@ function Categories() {
                 categoryLink='/earphones' 
             />
         </section>
-    )
+    );
 }
-
-export default Categories

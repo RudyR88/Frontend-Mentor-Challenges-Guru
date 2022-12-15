@@ -7,7 +7,7 @@ import FeaturedItemThree from '../components/FeaturedItemThree';
 import About from '../components/About';
 import '../scss/pages/Home.css';
 
-function Home() {
+export default function Home() {
     return (
         <>
             <main className='home' role='main'>
@@ -38,5 +38,3 @@ function Home() {
         </>   
     );
 }
-
-export default Home;

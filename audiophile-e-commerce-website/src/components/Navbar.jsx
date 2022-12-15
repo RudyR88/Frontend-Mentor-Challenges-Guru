@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import Navlinks from './Navlinks';
 import '../scss/components/Navbar.css';
 
-function Navbar() {
+export default function Navbar() {
     return (
         <header>
             <nav className='nav container flex-between'>
@@ -18,5 +18,3 @@ function Navbar() {
         </header>
     );
 }
-
-export default Navbar;

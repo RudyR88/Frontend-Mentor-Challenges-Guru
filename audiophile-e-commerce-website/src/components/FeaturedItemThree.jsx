@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../scss/components/FeaturedItemThree.css';
 
-function FeaturedItemThree({productName, productLink}) {
+export default function FeaturedItemThree({productName, productLink}) {
     return (
         <section className='no-margin-container featured-three'>
             <div className='featured-three__dec' aria-hidden='true'></div>
@@ -13,5 +13,3 @@ function FeaturedItemThree({productName, productLink}) {
         </section>
     );
 }
-
-export default FeaturedItemThree

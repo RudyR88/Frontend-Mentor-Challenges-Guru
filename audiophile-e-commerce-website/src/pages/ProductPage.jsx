@@ -8,7 +8,7 @@ import RelevantItem from '../components/RelevantItem';
 import data from '../js/data.json';
 import '../scss/pages/ProductPage.css';
 
-function ProductPage() {
+export default function ProductPage() {
     const [count, setCount] = useState(1);
     const {category, slug} = useParams();
     const item = data.filter(item => item.category === category && item.slug === slug)[0];
@@ -144,7 +144,5 @@ function ProductPage() {
         <Categories />
         <About />
         </div>
-    )
+    );
 }
-
-export default ProductPage

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../scss/components/ProductHero.css';
 
-function ProductHero({productName, productDesc, productLink}) {
+export default function ProductHero({productName, productDesc, productLink}) {
     return (
         <section className='product-hero'>
             <div className='product-hero__content container'>
@@ -12,7 +12,5 @@ function ProductHero({productName, productDesc, productLink}) {
                 <Link to={productLink} className='link-btn btn--txt link-btn--orange'>see product</Link>
             </div>
         </section>
-    )
+    );
 }
-
-export default ProductHero;

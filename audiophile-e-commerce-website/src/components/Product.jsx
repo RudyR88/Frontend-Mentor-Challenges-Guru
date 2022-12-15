@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../scss/components/Product.css';
 
-function Product({item, category}) {
+export default function Product({item, category}) {
     const {name, description, slug, categoryImage} = item;
     const {mobile, tablet, desktop} = categoryImage;
     return (
@@ -28,7 +28,5 @@ function Product({item, category}) {
             <Link to={`/${category}/${slug}`} className='link-btn btn--txt link-btn--orange'>see product</Link>
         </div>
     </section>
-    )
+    );
 }
-
-export default Product

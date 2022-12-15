@@ -120,9 +120,10 @@
             li + li {
                 margin-left: u.toRem(16);
             }
-
+            
             img {
                     cursor: pointer;
+                    display: block;
                     transition: filter .3s ease-in-out;
     
                     &:hover, &:focus {

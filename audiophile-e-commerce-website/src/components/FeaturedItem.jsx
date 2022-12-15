@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../scss/components/FeaturedItem.css';
 
-function FeaturedItem({decoration, productName, productDesc, productLink}) {
+export default function FeaturedItem({decoration, productName, productDesc, productLink}) {
     return (
         <section className='no-margin-container featured'>
             <img className='decoration' src={decoration} alt='' aria-hidden='true'/>
@@ -15,5 +15,3 @@ function FeaturedItem({decoration, productName, productDesc, productLink}) {
         </section>
     );
 }
-
-export default FeaturedItem;

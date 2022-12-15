@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../scss/components/RelevantItem.css';
 
-function RelevantItem({item}) {
+export default function RelevantItem({item}) {
     const {slug, name, image} = item;
     const category = slug.split('-').slice(-1)[0];
     const urlCategory = category.endsWith('s') ? category : category+'s';
@@ -27,7 +27,5 @@ function RelevantItem({item}) {
             <h5>{name}</h5>
             <Link to={`/${urlCategory}/${slug}`} className='link-btn btn--txt link-btn--orange'>see product</Link>
         </div>
-    )
+    );
 }
-
-export default RelevantItem;

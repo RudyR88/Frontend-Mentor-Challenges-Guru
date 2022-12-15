@@ -105,6 +105,7 @@
 }
 .footer__content .social img {
   cursor: pointer;
+  display: block;
   transition: filter 0.3s ease-in-out;
 }
 .footer__content .social img:hover, .footer__content .social img:focus {
