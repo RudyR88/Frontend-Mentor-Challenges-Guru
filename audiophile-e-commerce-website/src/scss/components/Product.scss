@@ -74,7 +74,6 @@
         p {
             width: u.toRem(327);
             margin: 0 auto;
-            opacity: 0.5;
             margin-bottom: u.toRem(24);
 
             @include u.breakpoint('medium'){

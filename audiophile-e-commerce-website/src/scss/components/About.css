@@ -61,9 +61,6 @@
   }
 }
 .about__content h2 {
-  margin-bottom: 2rem;
-}
-.about__content p {
   color: var(--dark-clr);
-  opacity: 0.5;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=About.css.map */

@@ -17,7 +17,7 @@ body {
   font-size: 0.9375rem;
   line-height: 1.5625rem;
   position: relative;
-  color: var(--dark-clr);
+  color: var(--txt-clr);
 }
 
 .link-btn {
@@ -53,6 +53,18 @@ body {
 .link-btn--transp:hover, .link-btn--transp:focus {
   background-color: var(--dark-clr);
   color: var(--light-clr);
+}
+
+.control-btn {
+  cursor: pointer;
+  padding: 0.9375rem;
+  border: none;
+  background-color: var(--section-clr);
+  color: var(--dark-clr-a);
+  transition: color 0.3s ease-in-out;
+}
+.control-btn:hover, .control-btn:focus {
+  color: var(--accent-clr);
 }
 
 .btn-link {
@@ -105,9 +117,16 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  color: var(--dark-clr);
+  font-size: 1.5rem;
   line-height: 2.25rem;
-  letter-spacing: 1.15px;
+  letter-spacing: 0.86px;
+}
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 2rem;
+    letter-spacing: 1.15px;
+  }
 }
 
 h4 {
@@ -176,13 +195,15 @@ h6 {
   --line-clr: hsl(0, 0%, 59.2%);
   --bg-clr: hsl(0, 0%, 6%);
   --header-bg-clr: hsl(0, 0%, 10%);
-  --txt-clr: hsl(0, 0%, 95%);
+  --section-clr: hsl(0, 0%, 95%);
   --title-clr: hsl(0, 0%, 98%);
   --category-clr: hsl(0, 0%, 94%);
   --hover-clr: hsl(21, 94%, 75%);
   --hover-clr2: hsla(0, 0%, 30%, 1);
   --light-clr: hsl(0, 0%, 100%);
   --dark-clr: hsl(0, 0%, 0%);
+  --txt-clr: hsla(0, 0%, 0%, .5);
+  --dark-clr-a: hsla(0, 0%, 0%, 0.25);
   --circles: url("../assets/home/desktop/pattern-circles.svg");
   --hero-mobile: url("../assets/home/mobile/image-header.jpg") bottom/cover no-repeat;
   --hero-tablet: url("../assets/home/tablet/image-header.jpg") bottom/cover no-repeat;

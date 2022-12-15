@@ -1,0 +1,28 @@
+.relevant img {
+  display: block;
+  width: 20.4375rem;
+  height: 7.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2em;
+}
+@media (min-width: 43.75em) {
+  .relevant img {
+    width: 13.9375rem;
+    height: 19.875rem;
+    margin-bottom: 2.5em;
+  }
+}
+@media (min-width: 68.75em) {
+  .relevant img {
+    width: 20rem;
+  }
+}
+.relevant h5 {
+  margin-bottom: 2em;
+}
+.relevant a {
+  display: block;
+  margin: 0 auto;
+}/*# sourceMappingURL=RelevantItem.css.map */

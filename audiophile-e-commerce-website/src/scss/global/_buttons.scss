@@ -41,6 +41,19 @@
     }
 }
 
+.control-btn {
+    cursor: pointer;
+    padding: u.toRem(15);
+    border: none;
+    background-color: var(--section-clr);
+    color: var(--dark-clr-a);
+    transition: color .3s ease-in-out;
+
+    &:hover, &:focus {
+        color: var(--accent-clr);
+    }
+}
+
 .btn-link{
     cursor: pointer;
     text-transform: capitalize;

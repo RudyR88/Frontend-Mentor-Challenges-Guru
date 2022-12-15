@@ -1,0 +1,11 @@
+@use '../util' as u;
+
+.includes {
+    margin-bottom: u.toRem(8);
+    span {
+        .quant {
+            font-weight: 700;
+            margin-right: u.toRem(21);
+        }
+    }
+}

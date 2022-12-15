@@ -40,6 +40,7 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 1.5rem;
+  color: var(--dark-clr);
   background: var(--category-clr);
 }
 @media (min-width: 43.75em) {

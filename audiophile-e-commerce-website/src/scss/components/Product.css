@@ -75,7 +75,6 @@
 .item__content p {
   width: 20.4375rem;
   margin: 0 auto;
-  opacity: 0.5;
   margin-bottom: 1.5rem;
 }
 @media (min-width: 43.75em) {

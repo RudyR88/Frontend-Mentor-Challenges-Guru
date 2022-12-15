@@ -29,9 +29,15 @@ h2 {
 }
 
 h3 {
-    font-size: u.toRem(32);
+    color: var(--dark-clr);
+    font-size: u.toRem(24);
     line-height: u.toRem(36);
-    letter-spacing: 1.15px;
+    letter-spacing: 0.86px;
+
+    @include u.breakpoint('medium'){
+        font-size: u.toRem(32);
+        letter-spacing: 1.15px;
+    }
 }
 
 h4 {

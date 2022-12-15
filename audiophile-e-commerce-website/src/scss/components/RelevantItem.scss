@@ -1,0 +1,31 @@
+@use '../util' as u;
+
+.relevant {
+    img {
+        display: block;
+        width: u.toRem(327);
+        height: u.toRem(120);
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: u.toEm(32);
+
+        @include u.breakpoint('medium'){
+            width: u.toRem(223);
+            height: u.toRem(318);
+            margin-bottom: u.toEm(40);
+        }
+
+        @include u.breakpoint('large'){
+            width: u.toRem(320);
+        }
+    }
+
+    h5 {
+        margin-bottom: u.toEm(32);
+    }
+
+    a {
+        display: block;
+        margin: 0 auto;
+    }
+}

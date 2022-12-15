@@ -37,6 +37,7 @@
         flex-direction: column;
         justify-content: center;
         padding-left: u.toRem(24);
+        color: var(--dark-clr);
         background: var(--category-clr);
 
         @include u.breakpoint('medium'){

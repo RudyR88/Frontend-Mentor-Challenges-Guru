@@ -57,12 +57,8 @@
         }
 
         h2 {
-            margin-bottom: u.toRem(32);
-        }
-
-        p {
             color: var(--dark-clr);
-            opacity: 0.5;
+            margin-bottom: u.toRem(32);
         }
     }
 }
