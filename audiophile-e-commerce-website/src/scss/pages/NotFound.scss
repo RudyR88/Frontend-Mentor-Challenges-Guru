@@ -1,0 +1,54 @@
+@use '../util' as u;
+
+.not-found {
+    padding-top: u.toRem(180);
+    margin-bottom: u.toRem(60);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin-bottom: u.toRem(160);
+
+        @include u.breakpoint('medium'){
+            align-items: center;
+            text-align: center;
+        }
+
+        img {
+            max-width: 480px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: u.toRem(40);
+            pointer-events: none;
+
+            @include u.breakpoint('medium'){
+                align-self: center;
+            }
+        }
+
+        h2 {
+            color: var(--accent-clr);
+        }
+
+        h5 {
+            margin-bottom: u.toRem(0);
+        }
+    
+
+        .credit {
+            display: block;
+            align-self: flex-end;
+            text-decoration: none;
+            color: var(--dark-clr-a);
+            transition: color 0.3s ease-in-out;
+
+            &:hover, &:focus {
+                color: var(--accent-clr);
+            }
+        }
+    }
+}
