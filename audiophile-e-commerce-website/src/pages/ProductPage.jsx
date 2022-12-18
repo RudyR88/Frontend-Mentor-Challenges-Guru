@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useParams, useNavigate, Navigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import Includes from '../components/Includes';
 import Categories from '../components/Categories';
 import About from '../components/About';
 import RelevantItem from '../components/RelevantItem';
-import NotFound from './NotFound';
 import data from '../js/data.json';
 import '../scss/pages/ProductPage.css';
 
@@ -13,8 +12,10 @@ export default function ProductPage() {
     const [count, setCount] = useState(1);
     const {category, slug} = useParams();
     const navigate = useNavigate();
-    
     const item = data.filter(item => item.category === category && item.slug === slug)[0];
+    if(!item){
+        return <Navigate to='/not-found' />
+    }
     const { 
         image,
         name,
