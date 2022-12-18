@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
 import ProductPage from './pages/ProductPage';
 import NotFound from './pages/NotFound';
-import Categories from './components/Categories';
+import MobileMenu from './components/mobileMenu';
 
 export default function App() {
   const [toggled, setToggled] = useState(false);
@@ -33,18 +33,11 @@ export default function App() {
     <Navbar toggleMenu={toggleMenu}/>
     <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='/:category' element={<CategoryPage toggleMenu={toggleMenu}/>} />
+        <Route path='/:category' element={<CategoryPage />} />
         <Route path='/:category/:slug' element={<ProductPage />} />
         <Route path='*' element={<NotFound />} />
     </Routes>
-    {
-      toggled &&
-      <div className='toggle-bg'>
-        <div className='menu'>
-          <Categories closeMenu={closeMenu}/>
-        </div>
-      </div>
-    }
+    { toggled && <MobileMenu closeMenu={closeMenu}/> }
     <Footer />
     </>
   )

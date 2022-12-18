@@ -282,7 +282,7 @@ h6 {
   position: absolute;
   top: 5.625rem;
   width: 100%;
-  height: 3704px;
+  height: 3703px;
   background-color: var(--toggle-bg);
   z-index: 100;
 }
@@ -293,7 +293,7 @@ h6 {
 }
 @media (min-width: 68.75em) {
   .toggle-bg {
-    height: 3343px;
+    display: none;
   }
 }
 .toggle-bg .menu {
