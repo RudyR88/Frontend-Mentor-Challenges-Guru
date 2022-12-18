@@ -1,2 +1,22 @@
 @forward './global';
 @forward './layout';
+@use './util' as u;
+
+.toggle-bg {
+    position: absolute;
+    top: u.toRem(90);
+    width: 100%;
+    height: 100%;
+    background-color: var(--toggle-bg);
+    z-index: 100;
+
+    .menu {
+        padding: u.toRem(86) 0 u.toRem(67);
+        background-color: var(--light-clr);
+        border-radius: 0 0 8px 8px;
+
+        .categories{
+            margin-bottom: 0;
+        }
+    }
+}

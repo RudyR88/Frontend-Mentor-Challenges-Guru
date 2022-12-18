@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
 import Navlinks from './Navlinks';
 import '../scss/components/Navbar.css';
 
-export default function Navbar() {
+export default function Navbar({toggleMenu}) {
+    
     return (
         <header>
             <nav className='nav container flex-between'>
                 <div className='nav-left flex-between'>
-                    <img className='mobile-menu' src='../assets/shared/tablet/icon-hamburger.svg' alt='mobile menu'/>
+                    <img onClick={toggleMenu} className='mobile-menu' src='../assets/shared/tablet/icon-hamburger.svg' alt='mobile menu'/>
                     <Link className='logo'to='/'><img src='../assets/shared/desktop/logo.svg' alt='audiophile'/></Link>
                     <Navlinks />
                 </div>
