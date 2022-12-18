@@ -37,16 +37,15 @@ export default function App() {
         <Route path='/:category/:slug' element={<ProductPage />} />
         <Route path='*' element={<NotFound />} />
     </Routes>
-    <Footer />
     {
-      toggled ? 
+      toggled &&
       <div className='toggle-bg'>
         <div className='menu'>
           <Categories closeMenu={closeMenu}/>
         </div>
       </div>
-      : ''
     }
+    <Footer />
     </>
   )
 }

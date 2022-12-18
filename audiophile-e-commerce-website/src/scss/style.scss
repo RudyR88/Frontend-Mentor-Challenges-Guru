@@ -6,9 +6,17 @@
     position: absolute;
     top: u.toRem(90);
     width: 100%;
-    height: 100%;
+    height: 3704px;
     background-color: var(--toggle-bg);
     z-index: 100;
+
+    @include u.breakpoint('medium'){
+        height: 3261px;
+    }
+
+    @include u.breakpoint('large'){
+        height: 3343px;
+    }
 
     .menu {
         padding: u.toRem(86) 0 u.toRem(67);
