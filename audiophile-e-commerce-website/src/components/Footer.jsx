@@ -14,9 +14,9 @@ export default function Footer() {
                 Come and visit our demo facility - we’re open 7 days a week.</p>
             <span>Copyright 2021. All Rights Reserved</span>
             <ul className='social'>
-                <li><a href='/#facebook-link' target='_blank'><img className='social-link' src='../assets/shared/desktop/icon-facebook.svg' alt='facebook link'/></a></li>
-                <li><a href='/#twitter-link' target='_blank'><img className='social-link' src='../assets/shared/desktop/icon-twitter.svg' alt='facebook link'/></a></li>
-                <li><a href='/#instagram-link' target='_blank'><img className='social-link' src='../assets/shared/desktop/icon-instagram.svg' alt='facebook link'/></a></li>
+                <li><a href='/#facebook-link'><img className='social-link' src='../assets/shared/desktop/icon-facebook.svg' alt='facebook link'/></a></li>
+                <li><a href='/#twitter-link'><img className='social-link' src='../assets/shared/desktop/icon-twitter.svg' alt='facebook link'/></a></li>
+                <li><a href='/#instagram-link'><img className='social-link' src='../assets/shared/desktop/icon-instagram.svg' alt='facebook link'/></a></li>
             </ul>
         </div>
     </footer>

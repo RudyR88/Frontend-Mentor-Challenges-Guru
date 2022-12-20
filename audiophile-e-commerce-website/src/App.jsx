@@ -33,8 +33,12 @@ export default function App() {
     <Navbar toggleMenu={toggleMenu}/>
     <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='/:category' element={<CategoryPage />} />
-        <Route path='/:category/:slug' element={<ProductPage />} />
+        <Route path='/headphones' element={<CategoryPage category='headphones'/>} />
+        <Route path='/headphones/:slug' element={<ProductPage category='headphones'/>} />
+        <Route path='/speakers' element={<CategoryPage category='speakers'/>} />
+        <Route path='/speakers/:slug' element={<CategoryPage category='speakers'/>} />
+        <Route path='/earphones' element={<CategoryPage category='earphones'/>} />
+        <Route path='/earphones/:slug' element={<ProductPage category='earphones'/>} />
         <Route path='*' element={<NotFound />} />
     </Routes>
     { toggled && <MobileMenu closeMenu={closeMenu}/> }

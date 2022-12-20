@@ -8,11 +8,12 @@ import RelevantItem from '../components/RelevantItem';
 import data from '../js/data.json';
 import '../scss/pages/ProductPage.css';
 
-export default function ProductPage() {
+export default function ProductPage({category}) {
     const [count, setCount] = useState(1);
-    const {category, slug} = useParams();
+    const {slug} = useParams();
     const navigate = useNavigate();
     const item = data.filter(item => item.category === category && item.slug === slug)[0];
+    console.log(item)
     if(!item){
         return <Navigate to='/not-found' />
     }
