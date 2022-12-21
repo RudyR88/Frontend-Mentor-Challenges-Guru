@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
 import ProductPage from './pages/ProductPage';
 import NotFound from './pages/NotFound';
-import MobileMenu from './components/mobileMenu';
+import MobileMenu from './components/MobileMenu';
 
 export default function App() {
   const [toggled, setToggled] = useState(false);
