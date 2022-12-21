@@ -43,7 +43,7 @@
 
 .control-btn {
     cursor: pointer;
-    padding: u.toRem(15);
+    padding: u.toRem(15) u.toRem(20);
     border: none;
     background-color: var(--section-clr);
     color: var(--dark-clr-a);

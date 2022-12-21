@@ -13,7 +13,6 @@ export default function ProductPage({category}) {
     const {slug} = useParams();
     const navigate = useNavigate();
     const item = data.filter(item => item.category === category && item.slug === slug)[0];
-    console.log(item)
     if(!item){
         return <Navigate to='/not-found' />
     }
@@ -35,7 +34,7 @@ export default function ProductPage({category}) {
     const othersComps = others.map(item => <RelevantItem key={uuidv4()} item={item}/>);
 
     const addCount = () => {
-        setCount(prevCount => prevCount + 1);
+        count < 100 ? setCount(prevCount => prevCount + 1) : '';
     };
     const subCount = () => {
         count > 1 ? setCount(prevCount => prevCount - 1) : '';
@@ -70,7 +69,15 @@ export default function ProductPage({category}) {
                         <div className='controls'>
                             <div className='btn--txt'>
                                 <button className='control-btn' onClick={subCount} disabled={count === 1 ? true : false}>-</button>
-                                <span className='count'>{count}</span>
+                                <input 
+                                    type='number' 
+                                    className='count' 
+                                    aria-label='item quantity' 
+                                    value={count} 
+                                    onChange={e => {setCount(e.target.value > 100 ? 100 : e.target.value)}}
+                                    min='1'
+                                    max='100'
+                                    />
                                 <button className='control-btn' onClick={addCount}>+</button>
                             </div>
                             <button className='link-btn btn--txt link-btn--orange'>add to cart</button>

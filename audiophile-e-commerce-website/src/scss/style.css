@@ -57,7 +57,7 @@ body {
 
 .control-btn {
   cursor: pointer;
-  padding: 0.9375rem;
+  padding: 0.9375rem 1.25rem;
   border: none;
   background-color: var(--section-clr);
   color: var(--dark-clr-a);

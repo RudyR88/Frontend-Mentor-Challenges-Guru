@@ -96,8 +96,17 @@
             }
 
             .count {
-                padding: u.toRem(14);
+                padding: u.toRem(15) 0;
+                width: 20px;
+                text-align: center;
                 background-color: var(--section-clr);
+                border: none;
+                -moz-appearance: textfield;
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button{
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
             }
         }
     }

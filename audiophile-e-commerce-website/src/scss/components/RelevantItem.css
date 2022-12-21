@@ -21,6 +21,7 @@
 }
 .relevant h5 {
   margin-bottom: 2em;
+  color: var(--dark-clr);
 }
 .relevant a {
   display: block;
