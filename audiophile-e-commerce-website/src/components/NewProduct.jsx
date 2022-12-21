@@ -11,17 +11,17 @@ export default function NewProduct({item, category}) {
         <picture aria-hidden='true'>
            <source
             media='(min-width: 1100px)'
-            srcSet={`${desktop}`}
+            srcSet={`.${desktop}`}
            />
            <source
             media='(min-width: 700px)'
-            srcSet={`${tablet}`}
+            srcSet={`.${tablet}`}
            />
            <source
             media='(min-width: 375px)'
-            srcSet={`${mobile}`}
+            srcSet={`.${mobile}`}
            />
-          <img src={mobile} className='item__preview' alt='' aria-hidden='true'/>
+          <img src={`.${mobile}`} className='item__preview' alt='' aria-hidden='true'/>
         </picture>
         <div className='item__content'>
             <span className='overline accent uppercase'>new product</span>
