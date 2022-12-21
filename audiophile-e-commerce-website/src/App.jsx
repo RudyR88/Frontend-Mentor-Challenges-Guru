@@ -36,7 +36,7 @@ export default function App() {
         <Route path='/headphones' element={<CategoryPage category='headphones'/>} />
         <Route path='/headphones/:slug' element={<ProductPage category='headphones'/>} />
         <Route path='/speakers' element={<CategoryPage category='speakers'/>} />
-        <Route path='/speakers/:slug' element={<CategoryPage category='speakers'/>} />
+        <Route path='/speakers/:slug' element={<ProductPage category='speakers'/>} />
         <Route path='/earphones' element={<CategoryPage category='earphones'/>} />
         <Route path='/earphones/:slug' element={<ProductPage category='earphones'/>} />
         <Route path='*' element={<NotFound />} />
