@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate, Navigate } from 'react-router-dom';
+import useCartManager from '../hooks/useCartManager';
 import { v4 as uuidv4 } from 'uuid';
 import Includes from '../components/Includes';
 import Categories from '../components/Categories';
 import About from '../components/About';
 import RelevantItem from '../components/RelevantItem';
-import data from '../js/data.json';
+import data from '../json/data.json';
 import '../scss/pages/ProductPage.css';
 
 export default function ProductPage({category}) {
     const [count, setCount] = useState(1);
     const {slug} = useParams();
     const navigate = useNavigate();
+    const [cart, addItem] = useCartManager();
     const item = data.filter(item => item.category === category && item.slug === slug)[0];
     if(!item){
         return <Navigate to='/not-found' />
@@ -32,6 +34,7 @@ export default function ProductPage({category}) {
     const featureParagraphs = features.split('\n\n').map(para => <p key={uuidv4()}>{para}</p>);
     const includedComps = inc.map(info => <Includes key={uuidv4()} info={info}/>);
     const othersComps = others.map(item => <RelevantItem key={uuidv4()} item={item}/>);
+    const isInCart = cart.filter(item => item.name === name).length  === 1 ? true : false;
 
     const addCount = () => {
         count < 100 ? setCount(prevCount => prevCount + 1) : '';
@@ -66,22 +69,33 @@ export default function ProductPage({category}) {
                         <h2>{name}</h2>
                         <p>{desc}</p>
                         <span className='price'>$ {Intl.NumberFormat('en-US').format(price)}</span>
-                        <div className='controls'>
-                            <div className='btn--txt'>
-                                <button className='control-btn' onClick={subCount} disabled={count === 1 ? true : false}>-</button>
-                                <input 
-                                    type='number' 
-                                    className='count' 
-                                    aria-label='item quantity' 
-                                    value={count} 
-                                    onChange={e => {setCount(e.target.value > 100 ? 100 : e.target.value)}}
-                                    min='1'
-                                    max='100'
-                                    />
-                                <button className='control-btn' onClick={addCount}>+</button>
-                            </div>
-                            <button className='link-btn btn--txt link-btn--orange'>add to cart</button>
-                        </div>
+                        {
+                            isInCart ?
+                            <span className='link-btn btn--txt link-btn--orange disabled'>Added to cart</span>
+                            :
+                            <>
+                                <div className='controls'>
+                                    <div className='btn--txt'>
+                                        <button className='control-btn' onClick={subCount} disabled={count === 1 ? true : false}>-</button>
+                                        <input 
+                                            type='number' 
+                                            className='count' 
+                                            aria-label='item quantity' 
+                                            value={count} 
+                                            onChange={e => {setCount(e.target.value > 100 ? 100 : e.target.value)}}
+                                            min='1'
+                                            max='100'
+                                            />
+                                        <button className='control-btn' onClick={addCount}>+</button>
+                                    </div>
+                                    <button className='link-btn btn--txt link-btn--orange' 
+                                        onClick={()=>{addItem(name, price, count)}}
+                                    >
+                                        add to cart
+                                    </button>
+                                </div>
+                            </>
+                        }
                     </div>
                 </div>
                 <div className='product__about'>

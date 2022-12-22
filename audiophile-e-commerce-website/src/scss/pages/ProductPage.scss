@@ -258,4 +258,18 @@
             }
          }
     }
+    
+    .disabled {
+        display: block;
+        cursor: not-allowed;
+        margin-bottom: u.toRem(88);
+    
+        @include u.breakpoint('medium'){
+            margin-bottom: 0;
+        }
+    
+        &:hover{
+            background-color: var(--accent-clr);
+        }
+    }
 }

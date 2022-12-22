@@ -10,7 +10,6 @@ import MobileMenu from './components/MobileMenu';
 
 export default function App() {
   const [toggled, setToggled] = useState(false);
-  const [cart, setCart] = useState([]);
 
   const toggleMenu = () => {
     setToggled(prevState => !prevState);
@@ -18,14 +17,6 @@ export default function App() {
 
   const closeMenu = () => {
     setToggled(false);
-  }
-
-  const addCart = (item, quantity) => {
-
-  }
-
-  const clearCart = () => {
-    setCart([]);
   }
 
   return (

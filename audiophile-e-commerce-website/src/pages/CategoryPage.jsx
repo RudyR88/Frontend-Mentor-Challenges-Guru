@@ -1,7 +1,6 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
-import data from '../js/data.json';
+import data from '../json/data.json';
 import Categories from '../components/Categories';
 import About from '../components/About';
 import NewProduct from '../components/NewProduct';

@@ -256,4 +256,17 @@
   .product__relevant-items .relevant + .relevant {
     margin-top: 0;
   }
+}
+.product .disabled {
+  display: block;
+  cursor: not-allowed;
+  margin-bottom: 5.5rem;
+}
+@media (min-width: 43.75em) {
+  .product .disabled {
+    margin-bottom: 0;
+  }
+}
+.product .disabled:hover {
+  background-color: var(--accent-clr);
 }/*# sourceMappingURL=ProductPage.css.map */
