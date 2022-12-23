@@ -1,0 +1,30 @@
+.cart-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 2rem auto 0;
+  width: 20.4375rem;
+  height: 30.5rem;
+  padding: 1.9375rem;
+  background-color: var(--light-clr);
+  border-radius: 8px;
+}
+@media (min-width: 43.75em) {
+  .cart-menu {
+    right: 40px;
+    left: unset;
+  }
+}
+@media (min-width: 68.75em) {
+  .cart-menu {
+    right: 165px;
+  }
+}
+.cart-menu__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-menu__head button {
+  margin: 0;
+}/*# sourceMappingURL=Cart.css.map */

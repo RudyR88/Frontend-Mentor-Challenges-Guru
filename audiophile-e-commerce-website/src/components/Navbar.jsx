@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import Navlinks from './Navlinks';
 import '../scss/components/Navbar.css';
 
-export default function Navbar({toggleMenu}) {
+export default function Navbar({toggleMenu, toggleCart}) {
     
     return (
         <header>
@@ -13,7 +13,7 @@ export default function Navbar({toggleMenu}) {
                     <Link className='logo'to='/'><img src='../assets/shared/desktop/logo.svg' alt='audiophile'/></Link>
                     <Navlinks />
                 </div>
-                <img className='cart' src='../assets/shared/desktop/icon-cart.svg' alt='cart'/>
+                <img onClick={toggleCart} tabIndex={0} className='cart' src='../assets/shared/desktop/icon-cart.svg' alt='cart'/>
             </nav>
             <hr />
         </header>

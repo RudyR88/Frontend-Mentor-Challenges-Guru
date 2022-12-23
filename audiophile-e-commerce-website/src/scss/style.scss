@@ -6,16 +6,12 @@
     position: absolute;
     top: u.toRem(90);
     width: 100%;
-    height: 3703px;
+    height: 87.8%;
     background-color: var(--toggle-bg);
     z-index: 100;
 
     @include u.breakpoint('medium'){
-        height: 3261px;
-    }
-
-    @include u.breakpoint('large'){
-        display: none;
+        height: 88.15%;
     }
 
     .menu {

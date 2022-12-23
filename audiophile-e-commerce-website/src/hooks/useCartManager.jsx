@@ -15,8 +15,8 @@ export default function useCartManager(){
       }
     }
     const clearCart = () => {
-    setCart([]);
+      setCart([])
     }
 
-    return [cart, addItem];
+    return {cart, addItem, clearCart};
 }

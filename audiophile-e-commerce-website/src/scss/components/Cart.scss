@@ -1,0 +1,32 @@
+@use '../util' as u;
+
+.cart-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: u.toRem(32) auto 0;
+    width: u.toRem(327);
+    height: u.toRem(488);
+    padding: u.toRem(31);
+    background-color: var(--light-clr);
+    border-radius: 8px;
+
+    @include u.breakpoint('medium'){
+        right: 40px;
+        left: unset;
+    }
+
+    @include u.breakpoint('large'){
+        right: 165px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            margin: 0;
+        }
+    }
+}

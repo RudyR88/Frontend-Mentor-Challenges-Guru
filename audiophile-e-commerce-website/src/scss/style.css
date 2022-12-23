@@ -189,6 +189,25 @@ h6 {
   line-height: 1.5625rem;
 }
 
+.cart-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.536875rem;
+  letter-spacing: 1.29px;
+  color: var(--dark-clr);
+}
+
+.remove-txt {
+  font-family: inherit;
+  text-decoration: underline;
+  text-transform: none;
+  transition: color 0.2s ease-in-out;
+}
+.remove-txt:hover, .remove-txt:focus {
+  color: var(--accent-clr);
+  opacity: 1;
+}
+
 :root {
   --primary-ft: "Manrope", sans-serif;
   --accent-clr: hsl(22, 65%, 57%);
@@ -282,18 +301,13 @@ h6 {
   position: absolute;
   top: 5.625rem;
   width: 100%;
-  height: 3703px;
+  height: 87.8%;
   background-color: var(--toggle-bg);
   z-index: 100;
 }
 @media (min-width: 43.75em) {
   .toggle-bg {
-    height: 3261px;
-  }
-}
-@media (min-width: 68.75em) {
-  .toggle-bg {
-    display: none;
+    height: 88.15%;
   }
 }
 .toggle-bg .menu {

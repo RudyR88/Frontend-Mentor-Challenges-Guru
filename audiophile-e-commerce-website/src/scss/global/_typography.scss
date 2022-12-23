@@ -98,3 +98,23 @@ h6 {
     font-weight: 500;
     line-height: u.toRem(25);
 }
+
+.cart-title {
+    font-weight: 700;
+    font-size: u.toRem(18);
+    line-height: u.toRem(24.59);
+    letter-spacing: 1.29px;
+    color: var(--dark-clr);
+}
+
+.remove-txt {
+    font-family: inherit;
+    text-decoration: underline;
+    text-transform: none;
+    transition: color .2s ease-in-out;
+
+    &:hover, &:focus {
+        color: var(--accent-clr);
+        opacity: 1;
+    }
+}

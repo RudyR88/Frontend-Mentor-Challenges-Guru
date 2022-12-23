@@ -7,21 +7,16 @@ import CategoryPage from './pages/CategoryPage';
 import ProductPage from './pages/ProductPage';
 import NotFound from './pages/NotFound';
 import MobileMenu from './components/MobileMenu';
+import Cart from './components/Cart';
+import useToggleManager from './hooks/useToggleManager';
 
 export default function App() {
-  const [toggled, setToggled] = useState(false);
-
-  const toggleMenu = () => {
-    setToggled(prevState => !prevState);
-  };
-
-  const closeMenu = () => {
-    setToggled(false);
-  }
+  const [menuToggle, toggleMenu, closeToggle] = useToggleManager();
+  const [cartToggle, toggleCart] = useToggleManager();
 
   return (
     <>
-    <Navbar toggleMenu={toggleMenu}/>
+    <Navbar toggleMenu={toggleMenu} toggleCart={toggleCart}/>
     <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/headphones' element={<CategoryPage category='headphones'/>} />
@@ -32,7 +27,8 @@ export default function App() {
         <Route path='/earphones/:slug' element={<ProductPage category='earphones'/>} />
         <Route path='*' element={<NotFound />} />
     </Routes>
-    { toggled && <MobileMenu closeMenu={closeMenu}/> }
+    { menuToggle && <MobileMenu closeMenu={closeToggle}/> }
+    { cartToggle && <Cart /> }
     <Footer />
     </>
   )

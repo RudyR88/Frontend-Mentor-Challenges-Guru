@@ -13,7 +13,7 @@ export default function ProductPage({category}) {
     const [count, setCount] = useState(1);
     const {slug} = useParams();
     const navigate = useNavigate();
-    const [cart, addItem] = useCartManager();
+    const {cart, addItem} = useCartManager();
     const item = data.filter(item => item.category === category && item.slug === slug)[0];
     if(!item){
         return <Navigate to='/not-found' />
