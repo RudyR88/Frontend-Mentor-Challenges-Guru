@@ -18,7 +18,8 @@ export default function ProductPage({category}) {
     if(!item){
         return <Navigate to='/not-found' />
     }
-    const { 
+    const {
+        id, 
         image,
         name,
         description: desc, 
@@ -34,7 +35,7 @@ export default function ProductPage({category}) {
     const featureParagraphs = features.split('\n\n').map(para => <p key={uuidv4()}>{para}</p>);
     const includedComps = inc.map(info => <Includes key={uuidv4()} info={info}/>);
     const othersComps = others.map(item => <RelevantItem key={uuidv4()} item={item}/>);
-    const isInCart = cart.filter(item => item.name === name).length  === 1 ? true : false;
+    const isInCart = cart.filter(item => item.id === id).length  === 1 ? true : false;
 
     const addCount = () => {
         count < 100 ? setCount(prevCount => prevCount + 1) : '';
@@ -82,14 +83,14 @@ export default function ProductPage({category}) {
                                             className='count' 
                                             aria-label='item quantity' 
                                             value={count} 
-                                            onChange={e => {setCount(e.target.value > 100 ? 100 : e.target.value)}}
+                                            onChange={e => {setCount(e.target.valueAsNumber > 100 ? 100 : e.target.valueAsNumber)}}
                                             min='1'
                                             max='100'
                                             />
                                         <button className='control-btn' onClick={addCount}>+</button>
                                     </div>
                                     <button className='link-btn btn--txt link-btn--orange' 
-                                        onClick={()=>{addItem(name, price, count)}}
+                                        onClick={()=>{addItem(id, name, price, count)}}
                                     >
                                         add to cart
                                     </button>

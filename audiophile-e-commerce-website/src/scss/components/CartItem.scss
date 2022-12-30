@@ -1,0 +1,53 @@
+@use '../util' as u;
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: u.toRem(16);
+        img {
+            width: u.toRem(64);
+            border-radius: 8px;
+        }
+
+        &__info{
+            font-weight: 700;
+            h6 {
+                margin-bottom: 0;
+                font-size: u.toRem(15);
+                letter-spacing: normal;
+                color: var(--dark-clr);
+            }
+
+            span {
+                display: block;
+                font-size: u.toRem(14);
+                line-height: u.toRem(25);
+            }
+        }
+    }
+
+    &__right {
+        .control-btn{
+            padding: 7px 11px;
+        }
+
+        input[type=number]{
+            padding: u.toRem(7) 0;
+            width: u.toRem(20);
+            text-align: center;
+            background-color: var(--section-clr);
+            border: none;
+            -moz-appearance: textfield;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button{
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+    }
+}

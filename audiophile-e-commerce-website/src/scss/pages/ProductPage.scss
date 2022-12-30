@@ -97,7 +97,7 @@
 
             .count {
                 padding: u.toRem(15) 0;
-                width: 20px;
+                width: u.toRem(20);
                 text-align: center;
                 background-color: var(--section-clr);
                 border: none;
